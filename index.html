@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg">
+
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <div class="bgCanvas">
+
+        <h2>Choose Grid Size</h2>
+
+        <form id="sizePicker">
+            <div class="gridSize">
+                <p>Grid Height</p>
+                 <input class="sizeInput" type="number" id="input_height" name="height" min="1" max="100" value="1">
+                 <input class="sizeInput" type="number" id="input_width" name="width" min="1" max="100" value="1">
+                 <p>Grid Width</p>
+             </div>
+             <div class="submit">
+                <input type="submit" class="btn">
+            </div>
+        </form>
+
+        <div class="colorPick">
+
+            <h2>Pick A Color</h2>
+
+            <div class="palette">
+                <input type="color" id="colorPicker">
+            </div>
+        </div>
+
+        <div class="canvas">
+
+            <h2>Design Canvas</h2>
+
+            <table id="pixel_canvas"></table>
+        </div>
+    </div>
+
+    <footer>
+        <h3>by @zoemiyoga</h3>
+    </footer>
+
+    <script src="designs.js"></script>
+</body>
+</html>
